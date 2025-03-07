@@ -36,6 +36,11 @@ but then you will not be able to push new files or any your updates to it.
 ```
 git pull
 ```
+If this command produces an error ending with `fatal: Need to specify how to reconcile divergent branches.`, run:
+```
+git config pull.rebase false
+```
+and repeat.
 
 ### Add your new or updated files
 
@@ -43,4 +48,8 @@ git pull
 git add matrix/matrix1.txt matrix/matrix2.txt
 git commit -m 'describe your commit'
 git push
+```
+If the last command produces an error like ` ! [rejected]        main -> main (fetch first)`, you need to pull the external changes first:
+```
+git pull
 ```
