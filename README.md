@@ -53,4 +53,4 @@ If the last command produces an error like ` ! [rejected]        main -> main (f
 ```
 git pull
 ```
-If you cloned the repository with `git clone https://...`, this command will ask you you to enter your account credentials.
+If you cloned the repository with `git clone https://...`, this command will ask you to enter your account credentials.
